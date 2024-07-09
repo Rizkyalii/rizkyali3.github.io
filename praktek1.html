@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>praktek1</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="praktek1.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h2>Ali</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#">Portofolio</a></li>
+        <li><a href="#SocialMedia">Contact</a></li>
+        <li><a href="#About">About</a></li>
+      </ul>
+      <button class="hire">Hire me</button>
+    </div>
+
+    <div class="main">
+      <h4>Hello , I'am <span>Rizky Maulana Ali</span></h4>
+      <p class="title">A Student In University Islamic Riau</p>
+      <p class="subtitle">I'm only newbie student and need too learn much how to become a programmer</p>
+      <img src="logouir-removebg-preview.png" />
+    </div>
+
+    <div class="guarantee">
+      <div class="item">
+        <div class="icon">
+          <i class="bx bx-check-shield"></i>
+        </div>
+        <div class="info">
+          <h3>+5</h3>
+          <p>Years Of Experience</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <i class="bx bx-check-shield"></i>
+        </div>
+        <div class="info">
+          <h3>+100</h3>
+          <p>Completed Project</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <i class="bx bx-check-shield"></i>
+        </div>
+        <div class="info">
+          <h3>+5</h3>
+          <p>Happy Clients</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+    </div>
+
+    <h5 class="seprator">Who I'am</h5>
+
+    <div class="about">
+      <img src="foto1.jpeg" />
+      <div class="info">
+        <h3 id="About">About Me</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates illo cumque molestiae pariatur dicta est voluptatem temporibus provident, dolorum facilis, quidem eveniet esse quo? Odio quo eum repudiandae illum pariatur.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vitae rem quos aliquam ab debitis consectetur sint facilis fugit ipsam, perspiciatis modi error earum, accusantium, sed nemo veniam molestias in. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Aperiam dignissimos corporis excepturi non ipsa ab, minus necessitatibus, labore veritatis dolorem esse ipsam blanditiis doloremque. Eligendi dignissimos necessitatibus impedit porro nulla! Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Ratione excepturi sequi, odio iste impedit quis odit quisquam commodi at provident, eos repellendus doloribus esse, consequuntur tenetur labore aperiam voluptas. Delectus.
+        </p>
+      </div>
+    </div>
+    <h3 id="skill" class="seprator">My Skills</h3>
+    <div class="skills">
+      <div class="left">
+        <div class="info">
+          <h3>What My Programming Skills Included</h3>
+          <p>I Can Many Language Programming,I Can Python,Java,C++,MySQL,HTML,CSS.But from now i can only basics from these language</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="item">
+          <i class="bx bxl-html5"></i>
+        </div>
+        <div class="item">
+          <i class="bx bxl-css3"></i>
+        </div>
+        <div class="item">
+          <i class="bx bxl-c-plus-plus"></i>
+        </div>
+        <div class="item">
+          <i class="bx bxl-python"></i>
+        </div>
+        <div class="item">
+          <i class="bx bxl-java"></i>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="start">
+        <h3>Start a project</h3>
+        <p>Whatsupppppppp</p>
+        <button>Lets do this</button>
+      </div>
+
+      <div class="cols">
+        <div class="about-cols">
+          <h3>Ali</h3>
+          <p>A Student</p>
+        </div>
+
+        <div class="links">
+          <h4>Useful links</h4>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Portofolio</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div id="SocialMedia" class="links">
+          <h4>Social Media</h4>
+          <a href="https://www.instagram.com/rizkyalii1?igsh=MWRhamE3c2k1b3VpZw==">Instagram</a>
+          <a href="#">Linkedln</a>
+          <a href="#">Whatsapp</a>
+          <a href="#">Facebook</a>
+          <a href="#">Youtube</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".navbar a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          document.getElementById(targetId).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
